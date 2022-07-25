@@ -72,7 +72,6 @@ class BOP_BP_YCBV(Dataset):
 
         # PIL to tensor
         self.to_tensor = transforms.Compose([
-            # transforms.Resize(self.load_size),
             transforms.ToTensor(),
             transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
         ])
@@ -171,10 +170,10 @@ class BOP_BP_YCBV(Dataset):
         obj = dict(label=name, name=name, RT_m2c=RT_m2c.astype(np.float32))
         objects.append(obj)
 
-        # mesh path
+        # object name
         objname = objects[0]['name']
 
-        # padding & resizing to self.load_size
+        # color aug.
         if self.is_train and self.opt.use_aug:
             render = augment_image(render, self.aug_ops)
 
@@ -188,7 +187,7 @@ class BOP_BP_YCBV(Dataset):
 
         render = self.to_tensor(render)
 
-        # shape (3,h/480,w/640), (4,4), (4,4), (1,h/480,w/640)
+        # shape (C, H, W), ...
         return {'img': render, 'calib': aug_intrinsic, 'extrinsic': extrinsic, 'aug_intrinsic': aug_intrinsic, 'folder_id': folder_id, 'frame_id': frame_id, 'obj_id': obj_id, 'name': objname}
 
     def get_item(self, index):
