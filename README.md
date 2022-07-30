@@ -4,7 +4,7 @@ This repository provides the source code and trained models of the 6D object pos
 
 **Neural Correspondence Field for Object Pose Estimation**<br>
 European Conference on Computer Vision (ECCV) 2022<br>
-[PDF](https://github.com/LinHuang17/NCF-code) | [BIB](https://github.com/LinHuang17/NCF-code) | [Project website](https://linhuang17.github.io/NCF/)
+[PDF](https://github.com/LinHuang17/NCF-code) | [BIB](https://linhuang17.github.io/NCF/resources/huang2022ncf.txt) | [Project website](https://linhuang17.github.io/NCF/)
 
 Contents: [Setup](#setup) | [Usage](#usage) | [Pre-trained models](#pre-trained-models)
 
@@ -47,4 +47,4 @@ To be updated.
 
 Models evaluated in [Neural Correspondence Field for Object Pose Estimation](https://github.com/LinHuang17/NCF-code):
 
-- [YCB-V]()
+- [YCB-V](https://drive.google.com/file/d/19rcvuIC7Ilu0MHPgLxmbxeUkOgBHR2be/view?usp=sharing)
