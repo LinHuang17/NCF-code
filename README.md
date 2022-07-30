@@ -13,7 +13,15 @@ Contents: [Setup](#setup) | [Usage](#usage) | [Pre-trained models](#pre-trained-
 
 To be updated.
 
-### 1.1 Python environment and dependencies
+### 1.1 Cloning the repository
+
+Download the code:
+```
+git clone https://github.com/LinHuang17/NCF-code.git
+cd NCF-code
+```
+
+### 1.2 Python environment and dependencies
 
 Create and activate conda environment with dependencies:
 ```
@@ -21,13 +29,6 @@ conda env create -f environment.yaml
 conda activate ncf
 ```
 
-### 1.2 Cloning the repository
-
-Download the code:
-```
-git clone https://github.com/LinHuang17/NCF-code.git
-cd NCF-code
-```
 
 ### 1.3 BOP datasets
 
