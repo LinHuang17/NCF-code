@@ -9,7 +9,7 @@ class BaseOptions():
     def initialize(self, parser):
         # Experiment launch: Logistic/Datasets related
         g_logistic = parser.add_argument_group('Logistic')
-        g_logistic.add_argument('--exp_id', type=str, default='ncf_objpifu_frustum_ray_rsdf_xyz_Rt_ycbv_1obj_run2',help='')
+        g_logistic.add_argument('--exp_id', type=str, default='ncf_ycbv_run2',help='')
         g_logistic.add_argument('--work_base_path', type=str, default='/data1/lin/ncf_results/runs',help='')
         
         g_logistic.add_argument('--dataset', type=str, default='ycbv',help='lm | lmo | ycbv')
@@ -129,7 +129,7 @@ class BaseOptions():
         # Eval. related
         g_eval = parser.add_argument_group('Evaluation')
         g_eval.add_argument('--step_size', type=int, default=10, help='step size (mm) of grid')
-        g_eval.add_argument('--num_in_batch', type=int, default=10000, help='number of each batch for eval.')
+        g_eval.add_argument('--num_in_batch', type=int, default=1500000, help='number of each batch for eval.')
         g_eval.add_argument('--thresh', type=float, default=0.0, help='0.0999 | 0.0 | -0.0999')
 
         g_eval.add_argument('--freq_eval_all', type=int, default=20, help='freqency of the eval. for all')

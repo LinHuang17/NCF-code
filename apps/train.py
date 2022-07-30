@@ -354,7 +354,7 @@ def train(opt):
             obj_id = [opt.obj_id][0]
             if epoch > 0 and epoch % opt.freq_eval_all == 0 and opt.use_xyz and opt.gen_obj_pose:
                 print('eval. for obj. pose and time (test) ...')
-                save_csv_path = os.path.join(results_path, opt.name, f'objpifu-obj{obj_id}_{opt.dataset}-Rt-time.csv')
+                save_csv_path = os.path.join(results_path, opt.name, f'ncf-obj{obj_id}_{opt.dataset}-Rt-time.csv')
                 eval_Rt_time(opt, netG.module, test_data_loader, save_csv_path)
 
     writer.close()
