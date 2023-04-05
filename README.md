@@ -55,6 +55,4 @@ where `work_base_path` is the path to the results (e.g., the estimated pose csv 
 
 ## <a name="pre-trained-models"></a>3. Pre-trained models
 
-Models evaluated in [Neural Correspondence Field for Object Pose Estimation](https://github.com/LinHuang17/NCF-code):
-
 - [YCB-V](https://drive.google.com/file/d/19rcvuIC7Ilu0MHPgLxmbxeUkOgBHR2be/view?usp=sharing)
